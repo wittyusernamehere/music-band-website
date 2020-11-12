@@ -1,0 +1,14 @@
+.borders {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  width: 980px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+@media all and (max-width: 320px) {
+  .borders {
+    padding: 0;
+  }
+}

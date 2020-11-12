@@ -1,0 +1,11 @@
+.borders{
+    text-align:center;   
+}
+
+.listitem{
+    display:inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    margin-right:1em;
+}
+

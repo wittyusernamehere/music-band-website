@@ -1,0 +1,65 @@
+.borders {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 980px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.text {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.nameinput {
+  margin-bottom: 10px;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  border-radius: 2px;
+  text-indent: 5px;
+  padding: 6px 0;
+}
+
+.emailinput {
+  margin-bottom: 12px;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  border-radius: 2px;
+  text-indent: 5px;
+  padding: 6px 0;
+}
+
+.messageinput {
+  margin-bottom: 15px;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  border-radius: 2px;
+  text-indent: 5px;
+  padding: 6px 0;
+}
+
+.submitbtn {
+  padding: 3px;
+  border-radius: 12px;
+  background: lightgrey;
+  width: 250px;
+  height: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 4rem;
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
+
+@media all and (max-width: 320px) {
+  .borders {
+    padding: 0;
+  }
+}
