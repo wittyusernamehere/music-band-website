@@ -1,31 +1,25 @@
-.loadingtext{
-    font-size:50px;
-    text-align:center;
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.list{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
+.listitem {
+  list-style: none;
+  opacity: 0.5;
+  margin-right: 1rem;
+  text-transform: uppercase;
 }
 
-.listitem{
-    list-style: none;
-    opacity: 0.5;
-    margin-right:1rem;
-    text-transform: uppercase;
+.listitem:hover {
+  opacity: 1;
 }
 
-.listitem:hover{
-    opacity:1;
+.link {
+  text-decoration: none;
+  color: darkblue;
 }
 
-.link{
-    text-decoration: none;
-    color: darkblue;
+.attribution {
+  text-align: center;
 }
-
-.attribution{
-    text-align:center;   
-}
-
