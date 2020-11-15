@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 
+import Spinner from './Spinner';
 import ErrorBoundary from './ErrorBoundary';
 import Title from './Title';
 import Footer from './Footer';
@@ -23,7 +24,7 @@ const App = () => {
         <Navbar />
         <Switch>
           <ErrorBoundary>
-            <Suspense fallback={<>Loading</>}>
+            <Suspense fallback={<Spinner />}>
               <Route path="/" component={Home} exact />
               <Route path="/biography" component={Biography} />
               <Route path="/contact" component={Contact} />
