@@ -9,9 +9,11 @@ import styles from './App.style.css';
 
 import { Route, Switch } from 'react-router-dom';
 import Navbar from './Navbar';
+
 const Home = lazy(() => import('./Home'));
 const Biography = lazy(() => import('./Biography'));
 const Contact = lazy(() => import('./Contact'));
+const NotFoundPage = lazy(() => import('./NotFoundPage'));
 
 const title = 'Band Name';
 
@@ -22,15 +24,17 @@ const App = () => {
         <Title title={title} />
 
         <Navbar />
-        <Switch>
-          <ErrorBoundary>
-            <Suspense fallback={<Spinner />}>
-              <Route path="/" component={Home} exact />
-              <Route path="/biography" component={Biography} />
-              <Route path="/contact" component={Contact} />
-            </Suspense>
-          </ErrorBoundary>
-        </Switch>
+
+        <ErrorBoundary>
+          <Suspense fallback={<Spinner />}>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/biography" component={Biography} />
+              <Route exact path="/contact" component={Contact} />
+              <Route component={NotFoundPage} />
+            </Switch>
+          </Suspense>
+        </ErrorBoundary>
       </div>
 
       <Footer />
